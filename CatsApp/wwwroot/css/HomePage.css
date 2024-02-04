@@ -1,0 +1,21 @@
+﻿/* HomePage.css */
+
+body {
+    background-image: url('https://wallpapers.com/images/featured/cat-g9rdx9uk2425fip2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    font-size: 36px;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    margin-top: 150px; /* Zwiększenie marginesu na górę */
+}
+
+p {
+    color: white;
+    margin-top: 20px; /* Zwiększenie marginesu na górę */
+}

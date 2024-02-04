@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CatsApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9f6bdb3630b390c02816a31afd6c56ed7b835e5a")]
 [assembly: System.Reflection.AssemblyProductAttribute("CatsApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CatsApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

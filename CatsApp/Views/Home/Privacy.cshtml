@@ -1,6 +1,54 @@
 ﻿@{
     ViewData["Title"] = "Privacy Policy";
 }
-<h1>@ViewData["Title"]</h1>
 
-<p>Use this page to detail your site's privacy policy.</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - CatsApp</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/privacy.css" asp-append-version="true" />
+</head>
+<body>
+
+    <h1>@ViewData["Title"]</h1>
+
+    <div class="privacy-content">
+        <p>Thank you for using CatsApp! Protecting your privacy and ensuring a safe environment while using our application is our top priority. Please review the following information to understand what data we collect, how we use it, and how we protect it.</p>
+        <h2>1. Types of Data Collected</h2>
+        <p>1.1. Personal Data: When registering on CatsApp, we may collect certain personal data such as email address, username, password, as well as profile information voluntarily provided by you, such as profile pictures or descriptions.</p>
+        <p>1.2. Usage Data: We may gather information regarding your use of CatsApp, including browsing history, interactions with other users, and preferences for app features.</p>
+        <p>1.3. Technical Data: While using CatsApp, we may automatically collect certain technical information such as IP addresses, browser type, operating system, and mobile device information.</p>
+        <h2>2. Use of Collected Data</h2>
+        <p>2.1. Service Personalization: We use collected data to personalize our services, providing you with a tailored experience based on your preferences and interactions within the app.</p>
+        <p>2.2. Communication: Your contact information may be used to communicate with you regarding updates, promotions, or important announcements related to CatsApp.</p>
+        <p>2.3. Analytics: We may use collected data for analytical purposes, such as tracking app usage trends, improving our services, and understanding user behavior to enhance the user experience.</p>
+        <h2>3. Data Security</h2>
+        <p>We take appropriate measures to safeguard your data against unauthorized access, alteration, disclosure, or destruction. We employ industry-standard security protocols and regularly review our security practices to ensure the protection of your personal information.</p>
+        <h2>4. Data Sharing</h2>
+        <p>We do not sell, trade, or rent your personal information to third parties. However, we may share your data with trusted third-party service providers who assist us in operating our application or servicing you, provided that they agree to keep your information confidential.</p>
+        <h2>5. Your Rights</h2>
+        <p>You have the right to access, correct, or delete your personal information stored on CatsApp. You may also opt-out of receiving promotional communications from us at any time.</p>
+        <h2>6. Changes to Privacy Policy</h2>
+        <p>We reserve the right to update this privacy policy as needed to reflect changes in our data practices or legal requirements. We encourage you to review this policy periodically for any updates.</p>
+        <h2>7. Contact Us</h2>
+        <p>If you have any questions or concerns regarding this privacy policy or our data practices, please contact us at [insert contact email or form link].</p>
+        <p>By using CatsApp, you consent to the collection and use of your information as outlined in this privacy policy.</p>
+        <p>Last updated: [insert date]</p>
+    </div>
+
+    @section Scripts {
+        @{
+            await Html.RenderPartialAsync("_ValidationScriptsPartial");
+        }
+    }
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+</body>
+</html>

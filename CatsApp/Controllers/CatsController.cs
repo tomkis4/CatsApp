@@ -12,7 +12,6 @@ using Microsoft.AspNetCore.Authorization;
 namespace CatsApp.Controllers
 {
     [Authorize]
-
     public class CatsController : Controller
     {
         private readonly ApplicationDbContext _context;
@@ -31,13 +30,11 @@ namespace CatsApp.Controllers
             var client = _clientFactory.CreateClient();
             client.DefaultRequestHeaders.Add("x-api-key", _apiKey);
 
-            var response = await client.GetAsync("https://api.thecatapi.com/v1/images/search?limit=1&size=small"); // Dodaj parametr size=small lub size=med lub size=full
+            var response = await client.GetAsync("https://api.thecatapi.com/v1/images/search?limit=1&size=small");
             response.EnsureSuccessStatusCode();
             var responseBody = await response.Content.ReadAsStringAsync();
 
             var catImages = JsonConvert.DeserializeObject<List<CatImage>>(responseBody);
-
-            // Jeśli otrzymana lista jest pusta, zwracamy pusty obiekt CatImage
             var catImage = catImages.FirstOrDefault() ?? new CatImage();
 
             return View(catImage);
@@ -61,12 +58,10 @@ namespace CatsApp.Controllers
             return View(catsModelEntity);
         }
 
-        // Pozostałe metody kontrolera (Create, Edit, Delete) pozostają bez zmian
+        // Other controller methods (Create, Edit, Delete) remain unchanged
         // ...
     }
 }
-
-
 
 
 

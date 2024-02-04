@@ -1,0 +1,30 @@
+﻿@model List<CatsApp.Controllers.CatFact>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Cat Facts</title>
+    <link rel="stylesheet" href="~/css/CatFacts.css" />
+</head>
+<body>
+
+    <div class="container">
+        <h1>Cat Facts</h1>
+
+        <ul id="catFactsList">
+            @foreach (var fact in Model)
+            {
+                <li>@fact.Text</li>
+            }
+        </ul>
+
+        <button id="nextButton">Next</button>
+    </div>
+
+    @section scripts {
+        <script src="~/js/CatFacts.js"></script>
+    }
+
+</body>
+</html>

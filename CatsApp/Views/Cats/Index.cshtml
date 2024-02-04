@@ -22,12 +22,18 @@
             <!-- Tutaj będą wyświetlane obrazy kotów -->
             <div class="cat-image">
                 <img src="@Model.Url" alt="Cat Image">
+                <div class="user-actions">
+                    <button class="next-cat-button" id="nextCatButton">Next Cat</button>
+                </div>
             </div>
         </div>
     </div>
 
-    
+    @section Scripts {
+        <script src="~/js/index.js"></script>
+    }
 </body>
 </html>
+
 
 

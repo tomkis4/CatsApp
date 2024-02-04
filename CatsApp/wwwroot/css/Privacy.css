@@ -1,0 +1,26 @@
+﻿/* privacy.css */
+
+body {
+    background-image: url('https://i.imgur.com/wxE8nEE.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+.privacy-content {
+    background-color: rgba(0, 0, 0, 0.7); /* Dodano przezroczysty czarny tło */
+    color: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+h2 {
+    margin-top: 20px;
+}

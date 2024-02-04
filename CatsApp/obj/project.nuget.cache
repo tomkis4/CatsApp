@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "TYbdIKLihx55UvRKXoBFhFx/OTu52dm4MhocO6H8OjEhNrGIGn+Uvx6cGLU1Xgp3s73m63V3WAXykXoKHioxYg==",
+  "dgSpecHash": "AtLyg08qiNsRMXOWzxgZ5juX50tWo6PMykyd6AuPfEIXguUp59EMOdMNvyBLudY0vAep5NqsULC2lv1SeF4P7A==",
   "success": true,
-  "projectFilePath": "C:\\zaliczenie\\CatsApp\\CatsApp\\CatsApp.csproj",
+  "projectFilePath": "C:\\zaliczenie2\\CatsApp\\CatsApp\\CatsApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Debrzno\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\Debrzno\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
