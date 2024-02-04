@@ -1,0 +1,33 @@
+﻿@model CatsApp.Models.CatImage
+
+@{
+    ViewData["Title"] = "Cats Gallery";
+    Layout = "~/Views/Shared/_Layout.cshtml"; // Ścieżka do twojego layoutu
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/index.css" asp-append-version="true" /> <!-- Dodanie odwołania do nowego pliku CSS -->
+</head>
+<body>
+    <div class="container">
+        <h1>Random Cat</h1>
+        <div class="cat-images" id="catImages">
+            <!-- Tutaj będą wyświetlane obrazy kotów -->
+            <div class="cat-image">
+                <img src="@Model.Url" alt="Cat Image">
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+</html>
+
+
